@@ -181,7 +181,7 @@ const CAPSTONE_STEPS = [
 /* ── SIMPLE BUILDING BLOCKS (no boxes, no shadows) ── */
 const Section = ({ tint = false, children }) => (
     <section style={{ background: tint ? TINT : '#fff' }}>
-        <div className="max-w-5xl mx-auto px-6 py-16 md:py-20">{children}</div>
+        <div className="w-full px-6 md:px-12 lg:px-20 py-16 md:py-20">{children}</div>
     </section>
 );
 
@@ -224,10 +224,10 @@ const PracticalActivity = ({ children }) => (
 /* ── PAGE ── */
 export default function DigitalMarketing() {
     return (
-        <div className="bg-white text-neutral-900" style={{ fontFamily: "'Poppins', sans-serif" }}>
+        <div className="bg-white text-neutral-900 w-full overflow-x-hidden" style={{ fontFamily: "'Poppins', sans-serif" }}>
             {/* HERO */}
             <section style={{ background: `linear-gradient(120deg, ${TINT} 0%, #ffffff 70%)` }}>
-                <div className="max-w-5xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+                <div className="w-full px-6 md:px-12 lg:px-20 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
                     <div>
                         <p className="text-[12px] font-bold tracking-[0.18em] uppercase" style={{ color: BRAND }}>
                             Digital Marketing Course
@@ -253,7 +253,7 @@ export default function DigitalMarketing() {
                     />
                 </div>
 
-                <div className="max-w-5xl mx-auto px-6 pb-12">
+                <div className="w-full px-6 md:px-12 lg:px-20 pb-12">
                     <ul className="grid grid-cols-2 md:grid-cols-4 gap-6 border-t pt-8" style={{ borderColor: LINE }}>
                         {HERO_STATS.map(({ icon: Icon, value, label }) => (
                             <li key={label} className="flex items-center gap-3">
